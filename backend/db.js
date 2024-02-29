@@ -11,12 +11,12 @@ const TodoSchema = new mongoose.Schema({
 });
 
 
-const create = mongoose.model('Todos', TodoSchema);
+const todo = mongoose.model('Todos', TodoSchema);
 // const User = mongoose.model('User', UserSchema);
 // const Course = mongoose.model('Course', CourseSchema);
 
 module.exports = {
-    create,
+    todo,
     // User,
     // Course
 }
