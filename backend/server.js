@@ -38,7 +38,7 @@ app.get('/todos', async (req,res)=>{
 
 })
 
-app.get('/completed', async (req,res)=>{
+app.put('/completed', async (req,res)=>{
 
     const updatePlayload = req.body
     const idvaildation = updateTodo.safeParse(updatePlayload)
